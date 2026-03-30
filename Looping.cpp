@@ -55,4 +55,11 @@ int main()
     cin >> nilB;
 
     rerata = (nilM + nilB) / 2;
+
+    if (!(rerata < 60))
+        status = "Lulus";
+    else
+        status = "Tidak Lulus";
+
+    cout << "Status kelulusan = " << status << ", dengan nilai rata-rata = " << rerata << endl;
 }
